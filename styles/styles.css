@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+
+:root {
+    --main-fr:  #122e52;
+    --main-fr2:#496488; 
+    --main-color: #fff;
+    --color-red: #EC1632; 
+    --color-black: #0B0906; 
+    --color-green: #39B556; 
+    --color-yellow: #F4EA06; 
+
+    --container-width-lg: 76%; 
+    --container-width-md: 90%; 
+    --container-width-sm: 94%; 
+
+    --transition: all 400ms ease; 
+}
+
+body {
+    font-family:"Montserrat", "san-serif"; 
+    line-height: 1.7;
+    background: var(--main-fr); 
+    /* for some reason color dont work */
+}
+
+.container{ 
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
+section {
+    padding: 6rem 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+
+}
+
+h1, h2, h3, h4, h5 {
+    line-height: 1.2;
+    color: var(--main-color);  
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+h2 {
+    font-size: 2rem ;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+a {
+    color: var(--main-color);
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.btn {
+    background: var(--color-black);
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+
+
+.btn:hover {
+    background: transparent;
+    color: var(--color-red);
+    border-color: var(--color-red);
+    border: 2px solid;
+}
+
+.btn-primary {
+    background: var(--color-red);
+    color: var(--main-color);
+}
+
+nav {
+    background: transparent;
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+}
+
+.nav_container {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav button {
+    display: none;
+}
+
+.nav__menu {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.nav__menu a {
+    font-size: 1rem;
+    transition: var(--transition); 
+}
+
+.nav__menu a:hover{
+    color: var(--color-yellow);
+}
+
+/* header  */
+
+header {
+    position: relative;
+    top: 5rem; 
+    height: 70vh;
+    margin-bottom: 5rem;
+}
+
+.header__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    align-items: center;
+    gap: 5rem;
+    height: 100%;
+}
+
+.header__left p {
+    margin: 1rem 0 2.4rem;
+}
+
+.header__right img {
+    padding: 4rem  4rem;
+}
+
+
+/* why join */
+
+.categories {
+    background-color: var(--main-fr2);
+    height: 29rem;
+
+}
+
+.categories h1 {
+    line-height: 1;
+    margin-bottom: 3rem;
+}
+
+
+.categories__container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 4rem;
+}
+
+.categories__left {
+    margin: 1rem 0 3rem;
+    margin-right: 4rem;
+}
+
+.categories__right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+}
+
+.category {
+    background-color: #F4EA06;
+    padding: 2rem;
+    border-radius: 2rem;
+    transition: var(--transition);
+}
+
+.category:hover {
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.4);
+    z-index: 1;
+
+}
+
+/* find more icon */
+.category_icon {
+    background-color: #F4EA06;
+    padding: 0.5rem;
+    border-radius: 0.9rem;
+}
+
+/* .category:nth-child(2) .category_icon {
+
+} */
+
+.category h5 {
+    margin: 2rem 0 1rem;
+}
+
+.categories p {
+    font-size: 0.85rem;
+}
+
