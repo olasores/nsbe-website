@@ -1,0 +1,66 @@
+:root {
+    --main-fr:  #0C2649;
+    --main-fr2:#496488; 
+    --main-color: #ffffff;
+    --color-red: #EC1632; 
+    --color-black: #0B0906; 
+    --color-green: #39B556; 
+    --color-yellow: #F4EA06; 
+    --color-orange : #DC7B2E; 
+
+    --container-width-lg: 76%; 
+    --container-width-md: 90%; 
+    --container-width-sm: 94%; 
+
+    --transition: all 400ms ease; 
+}
+
+
+
+
+
+
+
+
+.about_nsbe {
+    margin-top: 3rem;
+}
+
+
+.about__right h1 {
+    margin: 1.3rem 0 3.5;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: var(--color-orange);
+
+}
+
+.about__right p{
+    margin: 1.3rem 0 3.5;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: var(--main-color);
+
+}
+
+/* 
+
+
+.team {
+    background-color: var(--color-orange);
+    box-shadow: insert 0 0 3rem rgba(0, 0, 0, 0.6);
+}
+
+.team__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.team__member {
+    background-color: var(--color-green);
+    padding: 2rem;
+    border
+} 
+
+*/
