@@ -122,3 +122,43 @@
 .team_member-socials a {
     padding: 0.5rem;
 }
+
+
+/* media queries */
+
+/* tablet   */
+
+@media screen and (max-width: 1000px) {
+    body {
+        .about_nsbe {
+            margin-top: 2rem;
+        }
+    }
+
+    .team__container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+    .team__member {
+        padding: 1rem;
+    }
+
+
+}
+
+/* mobile media query  */
+
+@media screen and (max-width: 600px)  {
+    .team__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+    }
+
+    .team__member {
+        padding: 0;
+    }
+
+    .team__member p {
+        padding-bottom: 1.5rem;
+    }
+}
