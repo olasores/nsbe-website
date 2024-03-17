@@ -50,11 +50,12 @@ section h2 {
 
 h1, h2, h3, h4, h5 {
     line-height: 1.2;
-    color: var(--color-black);  
+    color: var(--main-color);  
 }
 
 h1 {
-    font-size: 2.4rem;
+    font-size: 2.4rem; 
+    color: #DC7B2E;
 }
 
 h2 {
@@ -72,7 +73,9 @@ h4 {
 a {
     color: var(--main-color);
 }
-
+p {
+    color: var();
+}
 img {
     display: block;
     width: 100%;
@@ -182,11 +185,7 @@ header {
 
 /* WHY JOIN  */
 
-.categories {
-    background-color: var(--main-fr2);
-    
 
-}
 
 .category {
     background-color: var(--color-orange);
@@ -197,9 +196,13 @@ header {
 /* why join */
 
 .categories {
-    background-color: var(--main-fr2);
+    background-color: var(--color-orange);
     height: 29rem;
 
+}
+
+.categories h1 {
+    color: var(--main-color);
 }
 
 .categories__left h1 {
