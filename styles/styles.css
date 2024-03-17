@@ -50,11 +50,12 @@ section h2 {
 
 h1, h2, h3, h4, h5 {
     line-height: 1.2;
-    color: var(--color-black);  
+    color: var(--main-color);  
 }
 
 h1 {
-    font-size: 2.4rem;
+    font-size: 2.4rem; 
+    color: #DC7B2E;
 }
 
 h2 {
@@ -72,7 +73,9 @@ h4 {
 a {
     color: var(--main-color);
 }
-
+p {
+    color: var();
+}
 img {
     display: block;
     width: 100%;
@@ -115,9 +118,13 @@ nav {
 }
 
 .window-scroll {
-     background-color: var(--main-fr2);
+     background-color: var(--color-orange);
      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+   
 }
+ .window-scroll h4{
+    color: #ffffff;
+ }
 
 .logo-id{
     color: var(--color-orange);
@@ -148,7 +155,7 @@ nav button {
 }
 
 .nav__menu a:hover{
-    color: var(--color-);
+    color: var(--color-red);
     text-decoration: underline;
 }
 
@@ -182,11 +189,7 @@ header {
 
 /* WHY JOIN  */
 
-.categories {
-    background-color: var(--main-fr2);
-    
 
-}
 
 .category {
     background-color: var(--color-orange);
@@ -197,9 +200,13 @@ header {
 /* why join */
 
 .categories {
-    background-color: var(--main-fr2);
+    background-color: var(--color-orange);
     height: 29rem;
 
+}
+
+.categories h1 {
+    color: var(--main-color);
 }
 
 .categories__left h1 {
@@ -335,7 +342,8 @@ footer ul li a:hover {
 }
 
   .nav__menu li a {
-    background: var(--color-yellow);
+    background: var(--color-orange);
+    border: 2px solid var(--main-fr);
     box-shadow: -4rem 6rem 10rem rgb(0, 0, 0.6);
     width: 100%;
     height: 100%;
