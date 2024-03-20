@@ -28,3 +28,33 @@ const closeNav = () => {
 }
 
 closeBtn.addEventListener('click', closeNav)
+
+
+const form = document.querySelector("form"); 
+const fullName = document.getElementById("name")
+const email = document.getElementById("email")
+const phone = document.getElementById("phone")
+const subject = document.getElementById("subject")
+const message = document.getElementById("form")
+
+
+function sendEmail() {
+     const bodyMessage = `Fullname`
+     Email.send({
+          Host : "smtp.elasticemail.com",
+          Username : "presidentcsufnsbe@gmail.com",
+          Password : "3B3228C0C39602643B668A78FAFF2917D3FD",
+          To : 'presidentcsufnsbe@gmail.com',
+          From : "presidentcsufnsbe@gmail.com",
+          Subject : "This is the subject",
+          Body : "And this is the body"
+      }).then(
+        message => alert(message)
+      );
+}
+
+form.addEventListener("submit", (e) => {
+     e.preventDefault(); 
+
+     sendEmail(); 
+})
